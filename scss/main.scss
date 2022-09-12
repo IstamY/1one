@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+ul,
+li,
+p,
+a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.contrainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 35px;
+}
+
+body {
+
+    background: url(/img/15226810_v688batch2-kul-10.jpg) center center no-repeat, #C1D6E9;
+    background-size: cover;
+    max-height: 100vh;
+    height: auto;
+
+    header {
+        height: 59px;
+        // background: rgba(255, 255, 255, 0.336);
+        background: rgba(0, 0, 0, 0.336);
+        backdrop-filter: blur(7px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 27px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        // color: #00396D;
+        color: white;
+    }
+
+    main {
+        .contrainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+
+            h2 {
+                font-size: 50px;
+                color: white;
+                letter-spacing: 3px;
+                padding: 30px 0;
+            }
+
+            .form {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+                p {
+                    color: white;
+                    font-size: 25px;
+                }
+
+                input {
+                    background: rgba(0, 0, 0, 0.336);
+                    padding: 0 15px;
+                    backdrop-filter: blur(7px);
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    height: 45px;
+                    color: white;
+                    opacity: 1;
+                    &::placeholder{
+                        color: white;
+                        opacity: 0.5;
+                    }
+
+                }
+
+                button {
+                    background-color: white;
+                    border: 1px solid white;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.582);
+                        backdrop-filter: blur(7px);
+                        color: white;
+                        transition: all 0.3s ease;
+                    }
+
+                    &:active{
+                        background: rgba(255, 255, 255, 0.336);
+                        backdrop-filter: blur(70px);
+                        transition: all 0.3s ease;
+                    }
+
+                }
+            }
+
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 100px 0;
+
+                li {
+                    width: 22%;
+                    height: auto;
+                    padding: 3% 0;
+                    border-radius: 5px;
+                    // background: rgba(255, 255, 255, 0.336);
+                    background: rgba(0, 0, 0, 0.336);
+                    // background: radial-gradient(circle at 40% 70%,rgb(95, 116, 233), rgba(76, 0, 255, 0));
+                    backdrop-filter: blur(3px);
+                    position: relative;
+                    transition: all 0.3s ease;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 35px;
+                    border: 2px solid white;
+                    cursor: pointer;
+
+                    p {
+                        font-size: 30px;
+                        font-weight: 600;
+                        color: white;
+                    }
+
+                    img {
+                        width: 70%;
+                    }
+
+                    &:hover {
+                        // background: rgba(0, 0, 0, 0.336);
+                        background: rgba(255, 255, 255, 0.336);
+                        backdrop-filter: blur(35px);
+                        transform: scale(1.02);
+
+                        p {
+                            color: #00396D;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    body {
+        background-position: top center;
+
+        main {
+            .contrainer {
+                .form {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+
+                    li {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
