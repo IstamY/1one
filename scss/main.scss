@@ -45,7 +45,7 @@ body {
         height: 59px;
         // background: rgba(255, 255, 255, 0.336);
         background: rgba(0, 0, 0, 0.336);
-        backdrop-filter: blur(7px);
+        backdrop-filter: blur(12px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -84,7 +84,7 @@ body {
                 input {
                     background: rgba(0, 0, 0, 0.336);
                     padding: 0 15px;
-                    backdrop-filter: blur(7px);
+                    backdrop-filter: blur(12px);
                     border: 1px solid white;
                     border-radius: 5px;
                     font-size: 15px;
@@ -141,7 +141,7 @@ body {
                     // background: rgba(255, 255, 255, 0.336);
                     background: rgba(0, 0, 0, 0.336);
                     // background: radial-gradient(circle at 40% 70%,rgb(95, 116, 233), rgba(76, 0, 255, 0));
-                    backdrop-filter: blur(3px);
+                    backdrop-filter: blur(12px);
                     position: relative;
                     transition: all 0.3s ease;
 
@@ -199,6 +199,7 @@ body {
 
                     li {
                         width: 90%;
+                        padding: 5% 0;
                     }
                 }
             }
