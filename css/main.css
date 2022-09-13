@@ -63,6 +63,7 @@ body main .contrainer h2 {
   color: white;
   letter-spacing: 3px;
   padding: 30px 0;
+  text-align: center;
 }
 body main .contrainer .form {
   display: flex;
