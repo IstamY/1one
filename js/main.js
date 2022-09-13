@@ -16,6 +16,11 @@ function time() {
 
     var distance = document.getElementById("km").value;
 
+    document.getElementById("man-m").innerHTML = ((distance / man) * 60).toFixed() + " min"
+    document.getElementById("bike-m").innerHTML = ((distance / bike) * 60).toFixed() + " min"
+    document.getElementById("car-m").innerHTML = ((distance / car) * 60).toFixed() + " min"
+    document.getElementById("airplane-m").innerHTML = ((distance / airplane) * 60).toFixed() + " min"
+
     // document.getElementById("man").innerHTML = (distance / 3.6).toFixed(2) + " hour"
     // document.getElementById("bike").innerHTML = (distance / 20.1).toFixed(2) + " hour"
     // document.getElementById("car").innerHTML = (distance / 70).toFixed(2) + " hour"
@@ -68,6 +73,7 @@ input.addEventListener("keypress", function (event) {
 });
 
 // let x =sad
+
 // console.log(String(x));
 
 // const lastDigit2Str = String(num2).slice(-1);
@@ -89,3 +95,5 @@ input.addEventListener("keypress", function (event) {
 
 // console.log((100 / 10).toFixed(2).slice(-2));
 // console.log(100 / 10);
+
+
